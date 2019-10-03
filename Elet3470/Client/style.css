@@ -1,0 +1,100 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    /* Sets all h1 tags to a shade of black found on w3school.com  */
+    color: #202020;
+}
+
+body{
+    background-image: url(Tline.jpg); /* This line adds the background image to the body of webpage */
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;  /*Font style  */
+}
+
+.menubar{
+    /* Sets the menu bar color and aligns the text within menu bar  */
+    background: black;
+    text-align: center ;
+}
+.menubar img{
+    /* height: auto;
+    margin-left: -33px;
+    max-height: 150px;
+    max-width: 100%;
+    width: auto; */
+    float: left;
+     height: auto;
+    max-height: 80px;
+    max-width: 100%;
+    margin-left: -25px;
+    width: auto; 
+    
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+
+}
+
+.menubar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+}
+
+.menubar ul li a{
+    /* This is for the anchor tag which created a link */
+text-decoration: none;
+color: white;
+}
+
+.active, .menubar ul li:hover
+{
+    background: #202020; /* This is a specific shade of grey found on w3school.com */
+    border-radius:  3px;
+}
+
+.sub-menu{
+    /* This is to make the display not visible unless the cursor is hovering over it */
+    display: none;
+}
+
+.menubar ul li:hover .sub-menu{
+    /* This is to display the submenu in a block form when the cursor hovers over it */
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .sub-menu ul{
+    /* This is to display the items within the submenu vertically, that will appear when you hover */
+    display: block;
+    margin: 10px;
+
+}
+.menubar ul li:hover .sub-menu ul li a:hover{
+    /* This adds color over the text that is highlighted from sub menu */
+    color:#ff751a;
+}
+
+.submenu2{
+    display: none;
+}
+
+.others:hover .submenu2{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: -40px;
+    margin-left: 140px;
+
+    
+}

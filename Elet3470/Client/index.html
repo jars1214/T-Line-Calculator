@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Transmission Line Calculator</title>
+<link rel="stylesheet" href="C:\Users\Justine\Desktop\Elet3470\Client\style.css">  <!--Links css file to html-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body text="white">
+     <!--To create a menu create a div tag with a class, 
+        then a ul tag within div tag and then a li tag within the ul tag-->
+<div class ="Menubar"> 
+    <img src= "JarsE.png">
+    <ul>                        <!--ul is to create the menu and li is the list the menu will have -->
+        <li class="active"><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>  <!--To make the menu option a link use the "a tag"/Anchor tag -->
+        <li ><a href="#"><i class="fa fa-fw fa-user"></i>About</a> </li>
+        <li><a href="#"><i class="fa fa-fw fa-calculator"></i>Calculator</a>
+            <!-- Making the Calculator Menu option have a sub menu -->
+           
+            <div class = "sub-menu">
+                <ul>
+                    <li class="others"><a href="#">Coaxial</a><i class="sub"></i>
+                        <div class="submenu2">
+                            <ul>
+                            <li ><a href="CoaxialLossless.html">Lossless</a> </li> 
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#">Microstrips</a><i class="sub"></i></li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <h1>Transmission Line Calculator</h1>  <!--This creates a large heading-->
+    <div> <font color ="black">Please select the type of T-Line from Calulator option on Menubar</font></div>
+    
+</body>
+</head>
+</html>
